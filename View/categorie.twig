@@ -1,0 +1,83 @@
+{% extends "./Templates/template.twig" %}
+{% block stylesheet %}<link rel="stylesheet" href="{{root}}/View/Templates/css/style.css">
+{% endblock %}
+{% block header %}
+	{% include "Templates/header/header.twig" %}
+{% endblock %}
+
+{% block content %}
+	<section id="body-liste">
+		<content id="content-liste">
+			<h1>Catégories</h1>
+			<h2>Liste des catégories arrêté</h2>
+			<ul
+				id="list-categories">
+				<!-- Mettre en js -->
+				<li>
+					<img src="./Ressources/js.png" alt="js">
+					<p>JS : Arrêter pour fonction non trouvée</p>
+				</li>
+				<li>
+					<img src="./Ressources/python.png" alt="python">
+					<p>Python : Arrêter pour copyright</p>
+				</li>
+				<li>
+					<img src="./Ressources/php.png" alt="php">
+					<p>PHP : Arrêter pour vol d’éléphant</p>
+				</li>
+				<li>
+					<img src="./Ressources/c.png" alt="c#">
+					<p>C# : Arrêter pour je sais pas</p>
+				</li>
+				<li>
+					<img src="./Ressources/css.png" alt="css">
+					<p>CSS : Arrêter pour ne pas avoir son style</p>
+				</li>
+				<li>
+					<img src="./Ressources/js.png" alt="js">
+					<p>JS : Arrêter pour fonction non trouvée</p>
+				</li>
+				<li>
+					<img src="./Ressources/python.png" alt="python">
+					<p>Python : Arrêter pour copyright</p>
+				</li>
+				<li>
+					<img src="./Ressources/php.png" alt="php">
+					<p>PHP : Arrêter pour vol d’éléphant</p>
+				</li>
+				<li>
+					<img src="./Ressources/c.png" alt="c#">
+					<p>C# : Arrêter pour je sais pas</p>
+				</li>
+				<li>
+					<img src="./Ressources/css.png" alt="css">
+					<p>CSS : Arrêter pour ne pas avoir son style</p>
+				</li>
+				<li>
+					<img src="./Ressources/js.png" alt="js">
+					<p>JS : Arrêter pour fonction non trouvée</p>
+				</li>
+				<li>
+					<img src="./Ressources/python.png" alt="python">
+					<p>Python : Arrêter pour copyright</p>
+				</li>
+				<li>
+					<img src="./Ressources/php.png" alt="php">
+					<p>PHP : Arrêter pour vol d’éléphant</p>
+				</li>
+				<li>
+					<img src="./Ressources/c.png" alt="c#">
+					<p>C# : Arrêter pour je sais pas</p>
+				</li>
+				<li>
+					<img src="./Ressources/css.png" alt="css">
+					<p>CSS : Arrêter pour ne pas avoir son style</p>
+				</li>
+			</ul>
+			<img src="./Ressources/kisspng.png" alt="kiss"></img>
+	    </content>
+    </section>
+{% endblock %}
+{% block footer %}
+{% include "./Templates/footer/footer.twig" %}
+<script src="{{root}}/View/Templates/js/app.js"></script>{% endblock %}

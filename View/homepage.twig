@@ -1,0 +1,113 @@
+{% extends "./Templates/template.twig" %}
+{% block stylesheet %}<link rel="stylesheet" href="{{root}}/View/Templates/css/style.css">
+{% endblock %}
+{% block header %}
+	{% include "Templates/header/header.twig" %}
+{% endblock %}
+
+{% block content %}
+	<main>
+		<div id="img-pres">
+			<img id="prison" src="./Ressources/prison.jpg" alt="photo prison">
+			<img id="jarod" src="./Ressources/Jarod-header-right.png" alt="jarod">
+			<img id="xhesika" src="./Ressources/Xhes-header-left.png" alt="xhesika">
+		</div>
+		<section id="section-article">
+			<h2>Article</h2>
+			<article id="article">
+				<div id="info-article">
+					<img src="./Ressources/Plaque-prison.jpg" alt="info-test">
+					<div>
+						<div id="catégorie-article">
+							<ul>
+								<p>Catégorie :
+								</p>
+								<li>
+									<a href="#">JS</a>
+								</li>
+								<li>
+									<a href="#">JS</a>
+								</li>
+								<li>
+									<a href="#">JS</a>
+								</li>
+							</ul>
+						</div>
+						<div id="catégorie-tags">
+							<ul>
+								<p>Tags :
+								</p>
+								<li>
+									<a href="#">#JS</a>
+								</li>
+								<li>
+									<a href="#">#JS</a>
+								</li>
+								<li>
+									<a href="#">#JS</a>
+								</li>
+							</ul>
+						</div>
+						<a href="#">Voir les autres Articles</a>
+					</div>
+				</div>
+				<div
+					id="slider">
+					<!-- faire le js -->
+					<div id="content-triangle-1"></div>
+					<a href=""><img src="./Ressources/Plaque-prison.jpg" alt="article 1"></a>
+					<a href=""><img src="./Ressources/Plaque-prison.jpg" alt="article 2"></a>
+					<a href=""><img src="./Ressources/Plaque-prison.jpg" alt="article 3"></a>
+					<div id="content-triangle-2"></div>
+				</div>
+			</article>
+		</section>
+		<section id="categories">
+			<article>
+				<h2>Catégories en tendances</h2>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Javascript</li>
+					<li>PHP</li>
+					<li>SQL</li>
+					<li>CMS</li>
+					<li>Cyber-sécurtié</li>
+				</ul>
+			</article>
+		</section>
+		<section id="tags">
+			<article>
+				<h2>Différents Tags</h2>
+				<ul>
+					<li>#JS</li>
+					<li>#JS</li>
+					<li>#JS</li>
+					<li>#JS</li>
+					<li>#JS</li>
+					<li>#JS</li>
+					<li>#JS</li>
+					<li>#JS</li>
+					<li>#JS</li>
+					<li>#JS</li>
+				</ul>
+			</article>
+		</section>
+		<section id="presentation">
+			<article>
+				<h2>Présentation promo</h2>
+				<div id="img-text">
+					<img src="./Ressources/note-s.png" alt="note-s">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim excepturi quam ullam earum amet et error, distinctio dolorum tempora, quia mollitia, nisi dignissimos vero aut veniam? Totam itaque ut sed quidem. Quam dolorem molestias beatae, sunt earum nihil minus repudiandae qui repellendus doloremque. Assumenda quasi dolorem cum? Similique impedit ad mollitia fuga accusantium eos enim dolores amet totam. Corporis unde, qui quod accusamus dolores molestias atque tempora quis, optio, commodi sint? Ut, quo modi placeat repellat beatae facere hic, labore voluptatum odio, id magni eaque deserunt unde quis quos minus expedita doloribus?
+					</p>
+				</div>
+			</article>
+		</section>
+	</main>
+
+{% endblock %}
+
+{% block footer %}
+	{% include "./Templates/footer/footer.twig" %}
+	<script src="{{root}}/View/Templates/js/app.js"></script>
+{% endblock %}

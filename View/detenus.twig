@@ -1,0 +1,77 @@
+{% extends "./Templates/template.twig" %}
+{% block stylesheet %}<link rel="stylesheet" href="{{root}}/View/Templates/css/style.css">
+{% endblock %}
+{% block header %}
+	{% include "Templates/header/header.twig" %}
+{% endblock %}
+
+{% block content %}
+	<h2>Présentation des détenus</h2>
+	<main id="container">
+		{% for detenu in detenus %}
+			<div class="case-detenu">
+				<div class="face-detenu">
+					<figure>
+						<img src="./Ressources/{{detenu.getPhoto}}" alt="{{detenu.getFirstname}}">
+					</figure>
+					<div class="barreaux">
+						<img src="./Ressources/barreau-left.png" alt="barreau-left" class="barreau-l">
+						<img src="./Ressources/barreau-right.png" alt="barreau-right" class="barreau-r">
+					</div>
+				</div>
+				<div class="desc-detenu">
+					<p class="name">Détenu :
+						{{detenu.getFirstname}}</p>
+					<span>Mise en examen pour</span>
+					<div class="direction-art">
+						<figure>
+							<img src="./Ressources/Ellipse 20.png" alt="">
+							<p>{{detenu.getDelit}}</p>
+						</figure>
+					</div>
+					<a href="./detenu/{{detenu.getId_detenu}}" class="click_det">En savoir plus sur
+						<strong>{{detenu.getFirstname}}</strong>
+					</a>
+				</div>
+			</div>
+		{% endfor %}
+	</main>
+	<section class="director">
+		<h2>Directeur de la prison</h2>
+		<div class="cedric">
+			<figure>
+				<img src="./Ressources/ced.png" alt="">
+			</figure>
+			<div class="descript-cedric">
+				<p>
+					Surnommé Le Boss, Mr Bélanger est redouter de toute la prison ! 
+				</p>
+				<p>
+					Aucun détenus ne lui résiste !
+				</p>
+				<p>
+					Ses sanctions sont sévères, son regard vous fait froid dans le dos, et son odeur ressemble au cassoulet servi lors de la gamelle !
+				</p>
+				<p>
+					Il peut cependant parfois se montrer agréable envers ses chouchous (oui Mr le Directeur fait du favoritisme !).
+				</p>
+				<p>
+					Mais depuis quelques jours ont n'entends plus trop Mr le Directeur. 
+				</p>
+				<p>
+					Les mouches l'embêtent, la chaleur l'insupporte, certains de ses prisonniers maladent se retrouve à l'infirmerie ... 
+				</p>
+				<p>
+					Rien ne va plus pour Le Boss.
+				</p>
+				<p>
+					Ça me dérange pas, moi j'aime bien !
+				</p>
+			</div>
+		</div>
+	</section>
+{% endblock %}
+{% block footer %}
+	{% include "./Templates/footer/footer.twig" %}
+	<script src="{{root}}/View/Templates/js/app.js"></script>
+{% endblock %}

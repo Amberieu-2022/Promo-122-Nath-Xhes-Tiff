@@ -1,0 +1,121 @@
+{% extends "./Templates/template.twig" %}
+{% block stylesheet %}<link rel="stylesheet" href="{{root}}/View/Templates/css/style.css">
+{% endblock %}
+{% block header %}
+	{% include "Templates/header/header.twig" %}
+{% endblock %}
+
+{% block content %}
+	<!-- MAIN/CONTENT -> les categories -->
+	<div id="content" class="row-limit-size">
+		<div id="first-box">
+			<h2>CELLULES</h2>
+		</div>
+		<div id="big-bloc">
+			<div id="cont">
+				<a href="{{root}}/mataverse">
+					<div class="lit-bloc">
+						<div id="img-box">
+							<h3>Alexandre Boutsday</h3>
+							<img src="./Ressources/meta.jpg" alt="">
+							<h3>- Metaverse</h3>
+						</div>
+						<img src="./Ressources/balles.png" alt="" style="opacity: 0.9;">
+					</div>
+				</a>
+				<a href="{{root}}/fonctionPc">
+					<div class="lit-bloc">
+						<div id="img-box">
+							<h3>Jarod Dauphin</h3>
+							<img src="./Ressources/pc.jpg" alt="">
+							<h3>- Fonctionnement PC</h3>
+						</div>
+						<img src="./Ressources/balles.png" alt="" style="opacity: 0.9;">
+					</div>
+				</a>
+				<a href="{{root}}/cryptomonnaie">
+					<div class="lit-bloc">
+						<div id="img-box">
+							<h3>Nathan Bertrand</h3>
+							<img src="./Ressources/btc.jpg" alt="">
+							<h3>- Cryptomoney</h3>
+						</div>
+						<img src="./Ressources/balles.png" alt="" style="opacity: 0.9;">
+					</div>
+				</a>
+
+			</div>
+			<div id="cont">
+				<a href="{{root}}/cyberAttack">
+					<div class="lit-bloc">
+						<div id="img-box">
+							<h3>Tiffany Flore</h3>
+							<img src="./Ressources/cyber.jpg" alt="">
+							<h3>- Cyber attack</h3>
+						</div>
+						<img src="./Ressources/balles1.png" alt="" style="opacity: 1;">
+					</div>
+				</a>
+				<a href="{{root}}/googleA">
+					<div class="lit-bloc">
+						<div id="img-box">
+							<h3>Pamela Essama</h3>
+							<img src="./Ressources/gg.jpg" alt="">
+							<h3>- Google analytics</h3>
+						</div>
+						<img src="./Ressources/balles1.png" alt="" style="opacity: 0.9;">
+					</div>
+				</a>
+				<a href="{{root}}/cryptographie">
+					<div class="lit-bloc">
+						<div id="img-box">
+							<h3>André Long</h3>
+							<img src="./Ressources/crypto.jpg" alt="">
+							<h3>- Cryptographie</h3>
+						</div>
+						<img src="./Ressources/balles1.png" alt="" style="opacity: 0.9;">
+					</div>
+				</a>
+			</div>
+			<div id="cont">
+				<a href="{{root}}/iot">
+					<div class="lit-bloc">
+						<div id="img-box">
+							<h3>Andy Loisel</h3>
+							<img src="./Ressources/electro.jpg" alt="">
+							<h3>- IOT</h3>
+						</div>
+						<img src="./Ressources/balles.png" alt="" style="opacity: 0.9;">
+					</div>
+				</a>
+				<a href="{{root}}/uxDark">
+					<div class="lit-bloc">
+						<div id="img-box">
+							<h3>Lilian Diaz</h3>
+							<img src="./Ressources/ux.jpg" alt="">
+							<h3>- UX dark thème
+							</h3>
+						</div>
+						<img src="./Ressources/balles.png" alt="" style="opacity: 1;">
+					</div>
+				</a>
+				<a href="{{root}}/noCode">
+					<div class="lit-bloc">
+						<div id="img-box">
+							<h3>Xhesika Milaqi</h3>
+							<img src="./Ressources/meta.jpg" alt="">
+							<h3>- No code</h3>
+						</div>
+						<img src="./Ressources/balles.png" alt="" style="opacity: 0.9;">
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block footer %}
+	{% include "./Templates/footer/footer.twig" %}
+	<script src="{{root}}/View/Templates/js/app.js"></script>
+{% endblock %}
+

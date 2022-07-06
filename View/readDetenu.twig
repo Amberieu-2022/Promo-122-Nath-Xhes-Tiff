@@ -1,0 +1,66 @@
+{% extends "./Templates/template.twig" %}
+{% block stylesheet %}<link rel="stylesheet" href="{{root}}/View/Templates/css/style.css">
+{% endblock %}
+{% block header %}
+	{% include "Templates/header/header.twig" %}
+{% endblock %}
+
+
+{% block content %}
+
+	<h2>Dossier carcérale de
+		{{detenu.getFirstname}}
+	</h2>
+	<div class="background-prison">
+		<div id="block-perso">
+			<figure id="perso">
+				<img src="../Ressources/{{detenu.getPhoto_simple}}" alt="{{detenu.getFirstname}}">
+			</figure>
+			<h3>{{detenu.getFirstname}}
+				{{detenu.getlastname}}</h3>
+			<p>
+				Emprisoné(e) à :
+				<strong>{{detenu.getActivity_area}}</strong>
+			</p>
+			<p>
+				Ses qualités :
+				{{detenu.getQuality}}
+			</p>
+			<p>
+				Ses défauts :
+				{{detenu.getDefaut}}
+			</p>
+			<div class="contact-content">
+				<div>
+					<div class="contact">
+						<figure>
+							<img src="{{root}}/View/Templates/accet/telephone.png" alt="telephone">
+						</figure>
+						<span>{{detenu.getPhone}}</span>
+					</div>
+					<div class="contact">
+						<figure>
+							<img src="{{root}}/View/Templates/accet/enveloppe.png" alt="enveloppe-mail">
+						</figure>
+						<span>{{detenu.getEmail}}</span>
+					</div>
+				</div>
+				<div class="contact-link">
+					<figure>
+						<img src="{{root}}/View/Templates/accet/linkedin_blanc.png" alt="logo-linkedin">
+					</figure>
+					<figure>
+						<img src="{{root}}/View/Templates/accet/github_blanc" alt="logo-github">
+					</figure>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}
+
+{% block footer %}
+	{% include "./Templates/footer/footer.twig" %}
+	<script src="{{root}}/View/Templates/js/app.js"></script>
+{% endblock %}

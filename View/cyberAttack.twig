@@ -1,0 +1,34 @@
+{% extends "./Templates/template.twig" %}
+{% block stylesheet %}<link rel="stylesheet" href="{{root}}/View/Templates/css/style.css">
+{% endblock %}
+{% block header %}
+	{% include "Templates/header/header.twig" %}
+{% endblock %}
+
+{% block content %}
+	<div id="article" class="row-limit-size">
+		<figure class="individu">
+			<img src="./Ressources/tiff-art.jpg" alt="" class="ind">
+		</figure>
+		<figure class="note">
+			<img src="./Ressources/feuille1.png" alt="image de feuille">
+			<h2>Tiffany Flore</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore mollitia eum sit corporis quidem obcaecati recusandae amet reiciendis numquam repudiandae neque cum voluptas architecto consequuntur sunt accusamus hic minima, inventore distinctio impedit pariatur.
+				<br>
+				Id fugiat dolor repellat non nostrum quibusdam est quos? Delectus eos praesentium modi, numquam vel aut a dolores eaque iste repellat provident adipisci ullam! Facilis, expedita illum aspernatur provident in aut mollitia veniam soluta exercitationem deserunt quidem esse ipsam! Quaerat, vel iure distinctio labore incidunt obcaecati perspiciatis blanditiis deleniti et quae ab corporis sit,
+				<br>
+				maxime quasi voluptatum eius asperiores, ducimus minus illum cumque. Necessitatibus porro veritatis eum totam eos dignissimos temporibus at, laudantium autem excepturi sit voluptatem. Unde quasi ipsum dolor sit ex aliquid saepe sint est autem ullam debitis accusantium, maxime nisi, soluta temporibus illo aspernatur commodi dicta facilis.
+			</p>
+			<h3>- Cyber Attack</h3>
+		</figure>
+		<figure class="individu">
+			<img src="./Ressources/crypto.jpg" alt="" class="pro">
+		</figure>
+	</div>
+{% endblock %}
+
+{% block footer %}
+	{% include "./Templates/footer/footer.twig" %}
+	<script src="{{root}}/View/Templates/js/app.js"></script>
+{% endblock %}
